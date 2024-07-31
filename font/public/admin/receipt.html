@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="../../source/stylesheet/root.css">
+  <link rel="stylesheet" href="../../source/stylesheet/admin/admin.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+	crossorigin="anonymous"></script>
+	<script src="../angular/angularjs.js"></script>
+	<script src="../../source/script/admin/admin.js"></script>
+  <title>Document</title>
+</head>
+<body ng-app="AppBanHang" ng-controller="MainCtrl">
+  <section id="sidebar">
+		<a href="#" class="brand">
+			<img src="../images/logo.png" alt="" class="img-icon">
+      <img src="../images/single-logo.png" alt="" class="single-img-icon">
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="./admin.html">
+					<i class="fa-solid fa-user"></i>
+					<span class="text">Managerment</span>
+				</a>
+			</li>
+			<li>
+				<a href="./products.html">
+					<i class="fa-solid fa-box"></i>
+					<span class="text">Products</span>
+				</a>
+			</li>
+			<li>
+				<a href="./manafactures.html">
+					<i class="fa-solid fa-industry"></i>
+					<span class="text">Manafactures</span>
+				</a>
+			</li>
+			<li>
+				<a href="./customers.html">
+					<i class="fa-solid fa-users"></i>
+					<span class="text">Customers</span>
+				</a>
+			</li>
+			<li>
+				<a href="./bill.html">
+					<i class="fa-solid fa-file-invoice"></i>
+					<span class="text">Bills</span>
+				</a>
+			</li>
+      <li class="active">
+				<a href="./receipt.html">
+					<i class="fa-solid fa-file-invoice-dollar"></i>
+					<span class="text">Receipts</span>
+				</a>
+			</li>
+			<li>
+				<a href="./statistical.html">
+					<i class="fa-solid fa-chart-simple"></i>
+					<span class="text">Statistical</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class="fa-solid fa-wrench"></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="./login.html" class="logout">
+					<i class="fa-solid fa-right-from-bracket"></i>
+					<span onclick="logOut()" class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class="fa-solid fa-bars"></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input" style="width: 400px;">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="../anh_nguoi.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<div class="submit">
+					<div class="submit__button">
+						<button>Lưu</button>
+					</div>
+				</div>
+				<div class="section__parents-button">
+					<div class="section__button">
+						<button>Thêm</button>
+					</div>
+					<!-- <div class="section__button">
+						<button>Sửa</button>
+					</div>
+					<div class="section__button">
+						<button>Xoá</button>
+					</div> -->
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+					<!-- RIGHT CONTENT -->
+		<!-- ENTER CONTENT -->
+			<div class="right-section">
+				<form>
+					<div class="section-big-parents border-right">
+						<div class="section__parents-label">
+							<div class="section__box">
+								<label for="">Nhập mã hoá đơn: </label><br>
+								<input class="section__input" type="text"><br>
+							</div>
+							<div class="section__box">
+								<label for="">Nhập mã nhà sản xuất: </label><br>
+								<input class="section__input" type="text"><br>
+							</div>
+							<div class="section__box">
+								<label for="">Ngày lập hoá đơn: </label><br>
+								<input class="section__input" type="text"><br>
+							</div>
+						</div>
+						<div class="section__parents-label">
+							<div class="section__box">
+								<label for="">Nhập mã hoá đơn: </label><br>
+								<input class="section__input" type="text"><br>
+							</div>
+							<div class="section__box">
+								<label for="">Nhập mã sản phẩm: </label><br>
+								<input class="section__input" type="text"><br>
+							</div>
+							<div class="section__box">
+								<label for="">Nhập số lượng: </label><br>
+								<input class="section__input" type="text"><br>
+							</div>
+							<div class="section__box">
+								<label for="">Nhập tổng tiền: </label><br>
+								<input class="section__input" type="text"><br>
+							</div>
+						</div>
+					</div>
+				</form>
+
+				<!-- TABLE CONTENT -->
+				<table id="table" class="table-box border-right table-content-box">
+					<tr class="colum">
+						<th class="colum-title one">Mã hoá đơn</th>
+						<th class="colum-title">Mã nhà sản xuất</th>
+						<th class="colum-title">Mô tả</th>
+						<th class="colum-title second">Chức năng</th>
+					</tr>
+					<tr class="colum-content-box" ng-repeat="x in listBill.data">
+						<th class="colum-content">{{x.hdbId}}</th>
+						<th class="colum-content">{{x.kId}}</th>
+						<th class="colum-content">{{x.hdbMoTa}}</th>
+						<th class="colum-content">
+							<i id="Edit" ng-click="Edit(x.hdbId)" class="fa-regular fa-pen-to-square"></i>
+							<i onclick="openOverlay()" ng-click="ShowBillDetail(x.hdbId)" class="fa-solid fa-circle-info fa-trash-can"></i>
+						</th>
+					</tr>
+				</table>
+				<div class="navigation"></div>
+				</div>
+			</div>
+		</main>
+	</section>
+
+	<script>
+		var app = angular.module('AppBanHang', [])
+		app.controller('MainCtrl', function ($scope, $http, $window) {
+			let pageIndex = 1;
+				$scope.Search = function (data) {
+					$http({
+						method: 'POST',
+						data,
+						url: 'https://localhost:44390/api/Bill/search-bill',
+					}).then(function (response) {
+						$scope.listBill = response.data;
+						var total = Number(response.data.totalItems);
+						reload(total);
+					});
+				};
+	
+				$scope.Search({
+					page: pageIndex,
+					pageSize: 6
+				})
+	
+				$scope.SearchByhdbMoTa = function() {
+					$scope.Search({
+						page: pageIndex,
+						pageSize: 6,
+						ten: $scope.TextSearch
+					})
+				}
+	
+				function reload(total) {
+					const totalPages = Math.ceil(total / 6);
+					document.querySelector('.navigation').innerHTML = '';
+					for (let index = 0; index < totalPages; index++) {
+						document.querySelector('.navigation').innerHTML += 
+						`<button data-id="${index + 1}" class="btn-primary">${index + 1}</button>`;
+					}
+					const btnNavigation = document.querySelectorAll('button[data-id]');
+					btnNavigation.forEach((item) => (
+						item.onclick = () =>
+							$scope.Search({
+								page: item.dataset.id,
+								pageSize: 6,
+							})),
+					);
+				}
+		})
+	</script>
+
+</body>
+</html>
