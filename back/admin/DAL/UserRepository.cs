@@ -81,21 +81,19 @@ namespace DAL
             }
         }
 
-		public List<UserModel> SearchUser(int pageIndex, int pageSize, out long total, string ten_khach, string dia_chi)
-        {
+		public bool DeleteUser(string id)
+		{
 			string msgError = "";
-			total = 0;
 			try
 			{
-				var dt = _db.ExecuteSProcedureReturnDataTable(out msgError, "sp_khach_search",
-					"@page_index", pageIndex,
-					"@page_size", pageSize,
-					"@ten_khach", ten_khach,
-					"@dia_chi", dia_chi);
-				if (!string.IsNullOrEmpty(msgError))
-					throw new Exception(msgError);
-				if (dt.Rows.Count > 0) total = (long)dt.Rows[0]["RecordCount"];
-				return dt.ConvertTo<UserModel>().ToList();
+				var result = _db.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_xoa_khach_hang",
+				"@kId", id);
+				;
+				if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
+				{
+					throw new Exception(Convert.ToString(result) + msgError);
+				}
+				return true;
 			}
 			catch (Exception ex)
 			{
@@ -103,23 +101,23 @@ namespace DAL
 			}
 		}
 
-		public UserModel GetIdKhach(string username, string password)
-		{
+		public List<UserModel> SearchUser(int pageIndex, int pageSize, string ten_khach, out long total)
+        {
 			string msgError = "";
+			total = 0;
 			try
 			{
-				var data = _db.ExecuteSProcedureReturnDataTable(
-					out msgError,
-					"sp_lay_id_khach",
-					"@tTaiKhoan", username,
-					"@tMatKhau", password);
+				var dt = _db.ExecuteSProcedureReturnDataTable(out msgError, "sp_tim_khach",
+					"@page_index", pageIndex,
+					"@page_size", pageSize,
+					"@ten", ten_khach);
 				if (!string.IsNullOrEmpty(msgError))
 					throw new Exception(msgError);
-				return data.ConvertTo<UserModel>().FirstOrDefault();
+				if (dt.Rows.Count > 0) total = (long)dt.Rows[0]["RecordCount"];
+				return dt.ConvertTo<UserModel>().ToList();
 			}
 			catch (Exception ex)
 			{
-
 				throw ex;
 			}
 		}

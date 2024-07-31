@@ -25,26 +25,21 @@ namespace BLL
 		{
 			return _res.GetByIdProduct(id);
 		}
-
-		public List<ProductModel> FilterIncrease()
+		public bool CreateProduct(ProductModel model)
 		{
-			return _res.FilterIncrease();
+			return _res.CreateProduct(model);
 		}
-		public List<ProductModel> FilterDecrease()
+		public bool UpdateProduct(ProductModel model)
 		{
-			return _res.FilterDecrease();
+			return _res.UpdateProduct(model);
 		}
-		public List<ProductModel> FilterLow()
+		public bool DeleteProduct(string id)
 		{
-			return _res.FilterLow();
+			return _res.DeleteProduct(id);
 		}
-		public List<ProductModel> FilterMedium()
+		public List<ProductModel> SearchProduct(int pageIndex, int pageSize, string ten, out long total)
 		{
-			return _res.FilterMedium();
-		}
-		public List<ProductModel> FilterHigh()
-		{
-			return _res.FilterHigh();
+			return _res.SearchProduct(pageIndex, pageSize, ten, out total);
 		}
 	}
 }

@@ -29,39 +29,57 @@ namespace API.Controllers
 			return Ok(dt);
 		}
 
-		[HttpGet("get-all-filter-increase")]
-		public IActionResult FilterIncrease()
+		[HttpPost("create-product")]
+		public ProductModel CreateProduct([FromBody] ProductModel model)
 		{
-			var dt = _bus.FilterIncrease().Select(x => new { x.spId, x.sTen, x.sGia, x.sAnh, x.sSoLuong });
-			return Ok(dt);
+			_bus.CreateProduct(model);
+			return model;
 		}
 
-		[HttpGet("get-all-filter-decrease")]
-		public IActionResult FilterDecrease()
+		[HttpPut("update-product")]
+		public ProductModel UpdateProduct([FromBody] ProductModel model)
 		{
-			var dt = _bus.FilterDecrease().Select(x => new { x.spId, x.sTen, x.sGia, x.sAnh, x.sSoLuong });
-			return Ok(dt);
+			_bus.UpdateProduct(model);
+			return model;
 		}
 
-		[HttpGet("get-all-filter-low")]
-		public IActionResult FilterLow()
+		[HttpDelete("delete-product")]
+		public IActionResult DeleteProduct(string model)
 		{
-			var dt = _bus.FilterLow().Select(x => new { x.spId, x.sTen, x.sGia, x.sAnh, x.sSoLuong });
-			return Ok(dt);
+			_bus.DeleteProduct(model);
+			return Ok(new { message = "xoa thanh cong" });
 		}
 
-		[HttpGet("get-all-filter-medium")]
-		public IActionResult FilterMedium()
+		[Route("search-product")]
+		[HttpPost]
+		public IActionResult Search([FromBody] Dictionary<string, object> formData)
 		{
-			var dt = _bus.FilterMedium().Select(x => new { x.spId, x.sTen, x.sGia, x.sAnh, x.sSoLuong });
-			return Ok(dt);
-		}
-
-		[HttpGet("get-all-filter-high")]
-		public IActionResult FilterHigh()
-		{
-			var dt = _bus.FilterHigh().Select(x => new { x.spId, x.sTen, x.sGia, x.sAnh, x.sSoLuong });
-			return Ok(dt);
+			try
+			{
+				var page = int.Parse(formData["page"].ToString());
+				var pageSize = int.Parse(formData["pageSize"].ToString());
+				string ten = "";
+				if (formData.Keys.Contains("ten") && !string.IsNullOrEmpty(Convert.ToString(formData["ten"])))
+				{
+					ten = Convert.ToString(formData["ten"]);
+				}
+				
+				long total = 0;
+				var data = _bus.SearchProduct(page, pageSize, ten, out total);
+				return Ok(
+					new
+					{
+						TotalItems = total,
+						Page = page,
+						PageSize = pageSize,
+						Data = data
+					}
+					);
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
 		}
 	}
 }

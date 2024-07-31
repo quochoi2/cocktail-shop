@@ -28,13 +28,13 @@ namespace BLL
         {
             return _res.UpdateUser(model);
         }
-		public UserModel GetIdKhach(string username, string password)
+		public bool DeleteUser(string id)
 		{
-			return _res.GetIdKhach(username, password);
+			return _res.DeleteUser(id);
 		}
-		public List<UserModel> SearchUser(int pageIndex, int pageSize, out long total, string ten_khach, string dia_chi)
+		public List<UserModel> SearchUser(int pageIndex, int pageSize, string ten_khach, out long total)
         {
-            return _res.SearchUser(pageIndex, pageSize, out total, ten_khach, dia_chi);
+            return _res.SearchUser(pageIndex, pageSize, ten_khach, out total);
         }
 	}
 }

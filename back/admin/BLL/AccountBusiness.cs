@@ -49,7 +49,10 @@ namespace BLL
 
             return user;
         }
-
+        public List<AccountModel> GetAll()
+        {
+            return _res.GetAll();
+        }
 
         public AccountModel GetDataById(string id)
         {
@@ -65,5 +68,14 @@ namespace BLL
         {
             return _res.Update(model);
         }
+
+        public bool Delete(string id)
+		{
+            return _res.Delete(id);
+        }
+		public List<AccountModel> SearchAccount(int pageIndex, int pageSize, string ten, out long total)
+		{
+			return _res.SearchAccount(pageIndex, pageSize, ten, out total);
+		}
 	}
 }

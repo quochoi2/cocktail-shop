@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4px74ZwBiYcdO/AYOxjKORpXb4zYK4JFKzvzicMkNSz0F/F3IIBG5nLT97uP8sjzrdtDl7yv7iyljHKTJpQWnQ==",
+  "dgSpecHash": "eHwHGx7l6DOw/xHGOpEEPZ4iwNja5IYKPW+PsZg5XYNPx+sNZFihtKzQQ/w0+nHCftKuIJKxp1e0VFGfZWi7Kg==",
   "success": true,
-  "projectFilePath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Solution1\\API User\\API User.csproj",
+  "projectFilePath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Cocktail-project\\User\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -843,6 +843,7 @@
           "Microsoft.Data.SqlClient": "5.1.1",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Newtonsoft.Json": "13.0.3",
+          "Swashbuckle.AspNetCore": "6.2.3",
           "System.IdentityModel.Tokens.Jwt": "7.0.1"
         },
         "compile": {
@@ -861,6 +862,7 @@
           "Microsoft.Data.SqlClient": "5.1.1",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Newtonsoft.Json": "13.0.3",
+          "Swashbuckle.AspNetCore": "6.2.3",
           "System.IdentityModel.Tokens.Jwt": "7.0.1"
         },
         "compile": {
@@ -878,6 +880,7 @@
           "Microsoft.Data.SqlClient": "5.1.1",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Newtonsoft.Json": "13.0.3",
+          "Swashbuckle.AspNetCore": "6.2.3",
           "System.IdentityModel.Tokens.Jwt": "7.0.1"
         },
         "compile": {
@@ -2208,11 +2211,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Đồ án 2 (bán cocktail với mvc)\\Solution1\\API User\\API User.csproj",
-      "projectName": "API User",
-      "projectPath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Solution1\\API User\\API User.csproj",
+      "projectUniqueName": "D:\\Đồ án 2 (bán cocktail với mvc)\\Cocktail-project\\User\\API\\API.csproj",
+      "projectName": "API",
+      "projectPath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Cocktail-project\\User\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Solution1\\API User\\obj\\",
+      "outputPath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Cocktail-project\\User\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2229,11 +2232,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Đồ án 2 (bán cocktail với mvc)\\Solution1\\BLL\\BLL.csproj": {
-              "projectPath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Solution1\\BLL\\BLL.csproj"
+            "D:\\Đồ án 2 (bán cocktail với mvc)\\Cocktail-project\\User\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Cocktail-project\\User\\BLL\\BLL.csproj"
             },
-            "D:\\Đồ án 2 (bán cocktail với mvc)\\Solution1\\DataModel\\DataModel.csproj": {
-              "projectPath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Solution1\\DataModel\\DataModel.csproj"
+            "D:\\Đồ án 2 (bán cocktail với mvc)\\Cocktail-project\\User\\DataModel\\DataModel.csproj": {
+              "projectPath": "D:\\Đồ án 2 (bán cocktail với mvc)\\Cocktail-project\\User\\DataModel\\DataModel.csproj"
             }
           }
         }

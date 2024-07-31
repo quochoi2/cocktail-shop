@@ -11,10 +11,9 @@ namespace BLL.Interfaces
 	{
 		List<ProductModel> GetAllProduct();
 		ProductModel GetByIdProduct(string id);
-		List<ProductModel> FilterIncrease();
-		List<ProductModel> FilterDecrease();
-		List<ProductModel> FilterLow();
-		List<ProductModel> FilterMedium();
-		List<ProductModel> FilterHigh();
+		bool CreateProduct(ProductModel model);
+		bool UpdateProduct(ProductModel model);
+		bool DeleteProduct(string id);
+		List<ProductModel> SearchProduct(int pageIndex, int pageSize, string ten, out long total);
 	}
 }

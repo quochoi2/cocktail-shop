@@ -52,85 +52,90 @@ namespace DAL
 				throw ex;
 			}
 		}
-
-		public List<ProductModel> FilterIncrease()
+		public bool CreateProduct(ProductModel model)
 		{
 			string msgError = "";
 			try
 			{
-				var data = _db.ExecuteQuery("sp_san_pham_tang_dan");
-				if (!string.IsNullOrEmpty(msgError))
-					throw new Exception(msgError);
-				return data.ConvertTo<ProductModel>().ToList();
+				var result = _db.ExecuteScalarSProcedureWithTransaction(out msgError,
+				"sp_them_san_pham",
+				"@sTen", model.sTen,
+				"@sGia", model.sGia,
+				"@sAnh", model.sAnh,
+				"@sSoLuong", model.sSoLuong);
+
+
+				if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
+				{
+					throw new Exception(Convert.ToString(result) + msgError);
+				}
+				return true;
 			}
 			catch (Exception ex)
 			{
-
+				throw ex;
+			}
+		}
+		public bool UpdateProduct(ProductModel model)
+		{
+			string msgError = "";
+			try
+			{
+				var result = _db.ExecuteScalarSProcedureWithTransaction(out msgError,
+				"sp_sua_san_pham",
+				"@spId", model.spId,
+				"@sTen", model.sTen,
+				"@sGia", model.sGia,
+				"@sAnh", model.sAnh,
+				"@sSoLuong", model.sSoLuong);
+				if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
+				{
+					throw new Exception(Convert.ToString(result) + msgError);
+				}
+				return true;
+			}
+			catch (Exception ex)
+			{
+				throw ex;
+			}
+		}
+		public bool DeleteProduct(string id)
+		{
+			string msgError = "";
+			try
+			{
+				var result = _db.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_xoa_san_pham",
+				"@spId", id);
+				;
+				if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
+				{
+					throw new Exception(Convert.ToString(result) + msgError);
+				}
+				return true;
+			}
+			catch (Exception ex)
+			{
 				throw ex;
 			}
 		}
 
-		public List<ProductModel> FilterDecrease()
+		public List<ProductModel> SearchProduct(int pageIndex, int pageSize, string ten, out long total)
 		{
 			string msgError = "";
+			total = 0;
 			try
 			{
-				var data = _db.ExecuteQuery("sp_san_pham_giam_dan");
+				var dt = _db.ExecuteSProcedureReturnDataTable(out msgError, "sp_tim_san_pham",
+					"@page_index", pageIndex,
+					"@page_size", pageSize,
+					"@ten", ten);
 				if (!string.IsNullOrEmpty(msgError))
 					throw new Exception(msgError);
-				return data.ConvertTo<ProductModel>().ToList();
+				if (dt.Rows.Count > 0) total = (long)dt.Rows[0]["RecordCount"];
+				return dt.ConvertTo<ProductModel>().ToList();
 			}
 			catch (Exception ex)
 			{
-
-				throw ex;
-			}
-		}
-		public List<ProductModel> FilterLow()
-		{
-			string msgError = "";
-			try
-			{
-				var data = _db.ExecuteQuery("sp_san_pham_gia_thap");
-				if (!string.IsNullOrEmpty(msgError))
-					throw new Exception(msgError);
-				return data.ConvertTo<ProductModel>().ToList();
-			}
-			catch (Exception ex)
-			{
-
-				throw ex;
-			}
-		}
-		public List<ProductModel> FilterMedium()
-		{
-			string msgError = "";
-			try
-			{
-				var data = _db.ExecuteQuery("sp_san_pham_gia_trung_binh");
-				if (!string.IsNullOrEmpty(msgError))
-					throw new Exception(msgError);
-				return data.ConvertTo<ProductModel>().ToList();
-			}
-			catch (Exception ex)
-			{
-
-				throw ex;
-			}
-		}
-		public List<ProductModel> FilterHigh()
-		{
-			string msgError = "";
-			try
-			{
-				var data = _db.ExecuteQuery("sp_san_pham_gia_cao");
-				if (!string.IsNullOrEmpty(msgError))
-					throw new Exception(msgError);
-				return data.ConvertTo<ProductModel>().ToList();
-			}
-			catch (Exception ex)
-			{
-
 				throw ex;
 			}
 		}
