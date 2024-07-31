@@ -1,0 +1,78 @@
+.tittle {
+  height: 130px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.login .tittle h1 {
+  font-size: 45px;
+}
+.take__username, .take__password {
+  padding: 10px 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+input {
+  font-size: 17px;
+  padding: 15px 25px;
+  width: 500px;
+}
+.forget-password {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.password-child {
+  width: 38%;
+}
+.password-child a {
+  color: var(--black);
+}
+.sign-box {
+  margin-top: 25px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.sign-in {
+  background-color: var(--black);
+}
+.sign-in:hover {
+  cursor: pointer;
+}
+.btn-sign-in {
+  padding: 15px 40px;
+  background-color: var(--black);
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px
+}
+.btn-sign-in:hover {
+  cursor: pointer;
+}
+.regiter-box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 100px;
+}
+.regiter-box a {
+  color: var(--black);
+}
+.enter {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.btn {
+  padding: 15px 40px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 18px
+}
+.btn:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,79 @@
+.top-margin-30 {
+  margin-top: 30px;
+}
+.bottom-margin-30 {
+  margin-bottom: 40px;
+}
+.bottom-margin-20 {
+  margin-bottom: 25px;
+}
+.left-margin-20 {
+  margin-left: 100px;
+}
+.right-margin-20 {
+  margin-right: 100px;
+}
+label {
+  font-size: 20px;
+}
+input {
+  padding: 7px 17px;
+  border-radius: 17px;
+  position: absolute;
+  right: 0;
+  width: 285px;
+}
+.bottom-input {
+  margin-bottom: 25px;
+  position: relative;;
+}
+
+.form-pay {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  padding: 65px 0;
+}
+.name {
+  display: flex;
+}
+.btn-pay {
+  position: relative;
+}
+.first-pay {
+  position: absolute;
+  right: 0;
+  padding: 10px 30px;
+  border: 1px soi;
+  border-radius: 30px;
+  border: 1px solid black;
+  top: 20px;
+  font-size: 20px;
+  background-color: var(--gray);
+}
+.second-pay {
+  position: absolute;
+  right: 180px;
+  padding: 10px 30px;
+  border: 1px soi;
+  border-radius: 30px;
+  border: 1px solid black;
+  top: 20px;
+  font-size: 20px;
+  background-color: var(--gray);
+}
+.first-pay:hover, .second-pay:hover {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}

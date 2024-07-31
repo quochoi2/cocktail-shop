@@ -1,0 +1,129 @@
+.contain {
+  padding: 50px 50px 0 50px;
+  display: flex;
+}
+
+.largest {
+  width: 500px;
+  height: 500px;
+}
+
+.small {
+  width: 120px;
+  height: 130px;
+}
+
+.iames-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-iamges {
+  position: relative;
+}
+
+.icon-zoom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.images-small__box {
+  padding: 0 5px;
+}
+
+
+/* right */
+.righ-contents {
+  padding: 0 50px;
+
+}
+
+.contents>h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contents>h1 {
+  font-size: 35px;
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  padding: 15px 0;
+}
+
+.cost {
+  font-size: 25px;
+  opacity: 0.5;
+}
+
+.quantity {
+  border: 1px solid;
+  display: flex;
+  width: 40%;
+}
+
+.quan {
+  padding: 10px 25px;
+  font-size: 20px;
+}
+
+.minus:hover,
+.plus:hover {
+  cursor: pointer;
+}
+
+.box-cart {
+  margin-top: 20px;
+}
+
+.box-button {
+  padding: 12px 189px;
+  font-size: 15px;
+}
+
+.firsss {
+  margin-top: 28px;
+}
+
+.bot {
+  padding: 10px 0;
+}
+
+span {
+  width: 5px;
+  height: 5px;
+  background: black;
+  border: 1px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.buy {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 2px;
+}
+
+.add:hover,
+.buy:hover {
+  border: 2px solid;
+  cursor: pointer;
+}
