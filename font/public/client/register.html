@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="../source/stylesheet/root.css">
+  <link rel="stylesheet" href="../source/stylesheet/main.css">
+  <link rel="stylesheet" href="../source/stylesheet/register.css">
+  <script src="./angular/angularjs.js"></script>
+  <script src="./js/register.js"></script>
+</head>
+
+<body ng-app="AppBanHang" ng-controller="MainCtrl">
+  <!-- Welcome -->
+  <div class="top">
+    <a href="#">Welcome to our new storefront! Have questions about your account, click here! <i
+        class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <!-- nav -->
+  <div class="header">
+    <div class="header__tool">
+      <div class="tool__search"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+      <div class="tool__logo"><a href="main.html"><img src="./images/logo.png" alt="Anh logo thuong hieu"></a></div>
+      <div class="tool__item">
+        <ul>
+          <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__nav">
+      <ul>
+        <li><a href="#">new arrivals</a></li>
+        <li><a href="#">bar tools<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="child">
+            <ul>
+              <li><a href="#">shakers</a></li>
+              <li><a href="#">strainers</a></li>
+              <li><a href="#">jiggers (oz)</a></li>
+              <li><a href="#">jiggers (ml)</a></li>
+              <li><a href="#">barspoons</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">sets & kits</a></li>
+        <li><a href="#">knives</a></li>
+        <li><a href="#">drinkware<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="child">
+            <ul>
+              <li><a href="#">glassware</a></li>
+              <li><a href="#">metal & ceramics</a></li>
+              <li><a href="#">acrylic drinkware</a></li>
+              <li><a href="#">tiki</a></li>
+              <li><a href="#">view all drinkware</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">signature collections<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="child">
+            <ul>
+              <li><a href="#">audry saunders</a></li>
+              <li><a href="#">beachbum berry</a></li>
+              <li><a href="#">dale degoff</a></li>
+              <li><a href="#">gaz regan</a></li>
+              <li><a href="#">jim meehan</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">books</a></li>
+        <li><a href="#">shop by finish<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="child">
+            <ul>
+              <li><a href="#">gold-plated</a></li>
+              <li><a href="#">silver-plated</a></li>
+              <li><a href="#">copper-plated</a></li>
+              <li><a href="#">gunmetal black</a></li>
+              <li><a href="#">matte black</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- register -->
+  <div class="register">
+    <h1>Create account</h1>
+    <div class="Fullname"><input name="kTen" type="text" placeholder="Fullname" ng-model="kTen"></div>
+    <div class="Fullname"><input name="tTaiKhoan" type="text" placeholder="Username" ng-model="tTaiKhoan"></div>
+    <div class="password"><input name="tMatKhau" type="password" placeholder="Password" ng-model="tMatKhau"></div>
+    <div class="password"><input name="tMatKhauLai" type="password" placeholder="Password again" ng-model="tMatKhauLai"></div>
+    <div class="enter">
+      <button ng-click="register()">Create</button>
+    </div>
+    <div class="regiter-box">
+      <div class="regiter-enter">
+        <a href="login.html">Already have an account</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer__f-child">
+      <div class="f-child__1">
+        <h1>INFO</h1>
+        <a href="">ABOUT US</a>
+        <a href="">TERMS & CONDITIONS</a>
+        <a href="">PRIVACY POLICY</a>
+        <a href="">RETURN POLICY</a>
+        <a href="">REGISTER</a>
+      </div>
+      <div class="f-child__img">
+        <img src="/public/images/third/c3.PNG" alt="" class="footer__img">
+      </div>
+      <div class="f-child__2">
+        <h1>SHOWROOM</h1>
+        <p class="tittle-footer">Visit our Showroom</p>
+        <p>31 W 8th Street, Floor 2 <br> New York, NY 10011</p>
+        <p class="tittle-footer">Monday-Friday</p>
+        <p>10a.m. - 6p.m.</p>
+      </div>
+      <div class="f-child__3">
+        <h1>EXPLORE</h1>
+        <a href="">LIBRARY</a>
+        <a href="">PRESS</a>
+        <a href="">FAQ</a>
+      </div>
+    </div>
+    <div class="footer__s-child">
+      <h1>Subscribe to our emails</h1>
+      <div class="s-child__box">
+        <div class="box__left">
+          <input type="text" class="text__box" placeholder="Email">
+        </div>
+        <div class="box__right">
+          <a href=""><i class="fa-brands fa-instagram" style="color:white"></i></a>
+          <a href=""><i class="fa-brands fa-youtube" style="color:white"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__t-child">
+      <p>Country/region</p>
+      <select name="country" id="selects">
+        <option value="Yemen">Yemen</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Spain">Spain</option>
+        <option value="Vietnam" selected>Vietnam</option>
+      </select>
+      <p><small>© 2023, Cocktail Kingdom Powered by Shopify</small></p>
+    </div>
+  </div>
+</body>
+
+</html>

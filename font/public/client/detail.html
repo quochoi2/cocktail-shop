@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="../source/stylesheet/root.css">
+  <link rel="stylesheet" href="../source/stylesheet/main.css">
+  <link rel="stylesheet" href="../source/stylesheet/detail.css">
+  <script src="../source/script/admin/global.js"></script>
+  <script src="./angular/angularjs.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="../source/script/detail.js"></script>
+  <title>Document</title>
+</head>
+
+<body ng-app="AppBanHang" ng-controller="ProductDetail">
+  <!-- Welcome -->
+  <div class="top">
+    <a href="#">Welcome to our new storefront! Have questions about your account, click here! <i
+        class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <!-- nav -->
+  <div class="header">
+    <div class="header__search">
+      <div class="box-input">
+        <div class="box-input-search">
+          <input class="input-search" type="text" value="" placeholder="Search">
+        </div>
+        <div class="icon-search">
+          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__tool">
+      <div class="tool__search"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+      <div class="tool__logo"><a href="main.html"><img src="./images/logo.png" alt="Anh logo thuong hieu"></a></div>
+      <div class="tool__item">
+        <ul>
+          <li><a href="./login.html"><i class="fa-regular fa-user"></i></a></li>
+          <li><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a><i onclick="logOut()" class="fa-solid fa-right-from-bracket"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__nav">
+      <ul>
+        <li><a href="#">new arrivals</a></li>
+        <li><a href="#">bar tools<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="child">
+            <ul>
+              <li><a href="#">shakers</a></li>
+              <li><a href="#">strainers</a></li>
+              <li><a href="#">jiggers (oz)</a></li>
+              <li><a href="#">jiggers (ml)</a></li>
+              <li><a href="#">barspoons</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">sets & kits</a></li>
+        <li><a href="#">knives</a></li>
+        <li><a href="#">drinkware<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="child">
+            <ul>
+              <li><a href="#">glassware</a></li>
+              <li><a href="#">metal & ceramics</a></li>
+              <li><a href="#">acrylic drinkware</a></li>
+              <li><a href="#">tiki</a></li>
+              <li><a href="#">view all drinkware</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">signature collections<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="child">
+            <ul>
+              <li><a href="#">audry saunders</a></li>
+              <li><a href="#">beachbum berry</a></li>
+              <li><a href="#">dale degoff</a></li>
+              <li><a href="#">gaz regan</a></li>
+              <li><a href="#">jim meehan</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">books</a></li>
+        <li><a href="#">shop by finish<i class="fa-solid fa-chevron-down"></i></a>
+          <div class="child">
+            <ul>
+              <li><a href="#">gold-plated</a></li>
+              <li><a href="#">silver-plated</a></li>
+              <li><a href="#">copper-plated</a></li>
+              <li><a href="#">gunmetal black</a></li>
+              <li><a href="#">matte black</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contain">
+    <div class="left-iamges">
+      <div class="icon-zoom">
+        <i class="fa-solid fa-magnifying-glass-plus"></i>
+      </div>
+      <div class="iamges">
+        <div class="iames-box">
+          <div class="images-large">
+            <img ng-src="{{sp.sAnh}}" alt="" class="largest">
+          </div>
+        </div>
+        <div class="images-small">
+          <div class="images-small__box">
+            <img src="./images/knives/c1.PNG" alt="" class="small">
+          </div>
+          <div class="images-small__box">
+            <img src="../public/images/small1.jpg" alt="" class="small">
+          </div>
+          <div class="images-small__box">
+            <img src="../public/images/small1.jpg" alt="" class="small">
+          </div>
+          <div class="images-small__box">
+            <img src="../public/images/small1.jpg" alt="" class="small">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="righ-contents">
+      <div class="contents">
+        <h5>KIT-ESSN-SET-ST</h5>
+        <h1>{{sp.sTen}}</h1>
+        <h3>STAINLESS STEEL</h3>
+        <p>Regular priceManufacturer Suggested Retail Price: $129.99 USD
+        </p>
+        <h6 class="cost">{{sp.sGia}} USD</h6>
+        <p><small>Quantity</small></p>
+        <div class="quantity">
+          <div class="quan minus" onclick="decrease()">-</div>
+          <div class="quan number">{{sp.sSoLuong}}</div>
+          <div class="quan plus" onclick="increase()">+</div>
+        </div>
+        <div class="box-cart">
+          <button class="box-button add" ng-click="handleAddToCartClick()">Add to cart</button>
+        </div>
+        <div class="box-cart">
+          <button class="box-button buy">Buy it now?</button>
+        </div>
+        <p class="bot firsss"><span></span> Seamless Mixing Glass, 550ml - (decorative engraving may vary)</p>
+        <p class="bot"><span></span> Hoffman® Barspoon 33.5cm or similar, Stainless Steel</p>
+        <p class="bot"><span></span> Japanese Style Jigger 1oz/2oz (30ml/60ml), Stainless Steel</p>
+        <p class="bot"><span></span> Set of Koriko® Weighted Shaking Tins or similar, Stainless Steel</p>
+        <p class="bot"><span></span> Koriko® Hawthorne Strainer or similar, Stainless Steel</p>
+      </div>
+    </div>
+  </div>
+  <div class="relation">
+    <!-- div2 -->
+    <div class="second">
+      <h1>You may also like</h1>
+      <div class="second__box">
+        <div class="second__child">
+          <div class="child__img">
+            <img src="./images/second/c1.PNG" alt="" class="s-img">
+            <img src="./images/second/c1-into.PNG" alt="" class="s-img">
+          </div>
+          <div class="child__s-form">
+            <h1>KORIKO® HAWTHORNE STRAINER</h1>
+            <p>GOLD-PLATED</p>
+            <p>637.000 VND</p>
+          </div>
+        </div>
+        <div class="second__child">
+          <div class="child__img">
+            <img src="./images/second/c2.PNG" alt="" class="s-img">
+            <img src="./images/second/c2-into.PNG" alt="" class="s-img">
+          </div>
+          <div class="child__s-form">
+            <h1>STEPPED JIGGER</h1>
+            <p>STAINLESS STEEL</p>
+            <p>812.000 VND</p>
+          </div>
+        </div>
+        <div class="second__child">
+          <div class="child__img">
+            <img src="./images/second/c3.PNG" alt="" class="s-img">
+            <img src="./images/second/c3-into.PNG" alt="" class="s-img">
+          </div>
+          <div class="child__s-form">
+            <h1>BEATRICE COUPE GLASS</h1>
+            <p>6.5oz (192ml) / CASE OF 24</p>
+            <p>4.919.000 VND</p>
+          </div>
+        </div>
+        <div class="second__child">
+          <div class="child__img">
+            <img src="./images/second/c4.PNG" alt="" class="s-img">
+            <img src="./images/second/c4-into.PNG" alt="" class="s-img">
+          </div>
+          <div class="child__s-form">
+            <h1>DOLL HEAD MUG</h1>
+            <p>GLAZED CERAMIC / 15oz (550ml)</p>
+            <p>492.000 VND</p>
+          </div>
+        </div>
+        <div class="second__child">
+          <div class="child__img">
+            <img src="./images/second/c5.PNG" alt="" class="s-img">
+            <img src="./images/second/c5-into.PNG" alt="" class="s-img">
+          </div>
+          <div class="child__s-form">
+            <h1>KORIKO® HAWTHORNE STRAINER</h1>
+            <p>STAINLESS STEEL / PACK OF 4</p>
+            <p>345.000 VND</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer__f-child">
+      <div class="f-child__1">
+        <h1>INFO</h1>
+        <a href="">ABOUT US</a>
+        <a href="">TERMS & CONDITIONS</a>
+        <a href="">PRIVACY POLICY</a>
+        <a href="">RETURN POLICY</a>
+        <a href="">REGISTER</a>
+      </div>
+      <div class="f-child__img">
+        <img src="/public/images/third/c3.PNG" alt="" class="footer__img">
+      </div>
+      <div class="f-child__2">
+        <h1>SHOWROOM</h1>
+        <p class="tittle-footer">Visit our Showroom</p>
+        <p> 31 W 8th Street, Floor 2 <br> New York, NY 10011</p>
+        <p class="tittle-footer">Monday-Friday</p>
+        <p>10 a.m. - 6 p.m.</p>
+      </div>
+      <div class="f-child__3">
+        <h1>EXPLORE</h1>
+        <a href="">LIBRARY</a>
+        <a href="">PRESS</a>
+        <a href="">FAQ</a>
+      </div>
+    </div>
+    <div class="footer__s-child">
+      <h1>Subscribe to our emails</h1>
+      <div class="s-child__box">
+        <div class="box__left">
+          <input type="text" class="text__box" placeholder="Email">
+        </div>
+        <div class="box__right">
+          <a href=""><i class="fa-brands fa-instagram" style="color:white"></i></a>
+          <a href=""><i class="fa-brands fa-youtube" style="color:white"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__t-child">
+      <p>Country/region</p>
+      <select name="country" id="selects">
+        <option value="Yemen">Yemen</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Spain">Spain</option>
+        <option value="Vietnam" selected>Vietnam</option>
+      </select>
+      <p><small>© 2023, Cocktail Kingdom Powered by Shopify</small></p>
+    </div>
+  </div>
+
+  <script>
+    let count = 1;
+
+    const display = () => {
+      document.querySelector('.number').textContent = count;
+    };
+
+    const increase = () => {
+      count += 1;
+      display();
+    };
+
+    const decrease = () => {
+      if (count >= 1) {
+        count -= 1;
+      }
+      display();
+    };
+    
+    const logOut = () => {
+      localStorage.clear();
+      if(confirm("Bạn có muốn thoát không?")) {
+        window.location.href = 'login.html';
+      }
+    }
+
+  </script>
+</body>
+
+</html>
