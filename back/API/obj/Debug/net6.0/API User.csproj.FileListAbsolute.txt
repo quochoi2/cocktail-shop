@@ -1,0 +1,77 @@
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\appsettings.Development.json
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\appsettings.json
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\API User.exe
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\API User.deps.json
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\API User.runtimeconfig.json
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\API User.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\API User.pdb
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Azure.Core.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Azure.Identity.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\BLL.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\DAL.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\DataModel.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\BLL.pdb
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\DataModel.pdb
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\bin\Debug\net6.0\DAL.pdb
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.csproj.AssemblyReference.cache
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.GeneratedMSBuildEditorConfig.editorconfig
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.AssemblyInfoInputs.cache
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.AssemblyInfo.cs
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.csproj.CoreCompileInputs.cache
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.MvcApplicationPartsAssemblyInfo.cs
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.MvcApplicationPartsAssemblyInfo.cache
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\staticwebassets\msbuild.API User.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\staticwebassets\msbuild.build.API User.props
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.API User.props
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.API User.props
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\staticwebassets.build.json
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\staticwebassets.development.json
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\scopedcss\bundle\API User.styles.css
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.csproj.CopyComplete
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\refint\API User.dll
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.pdb
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\API User.genruntimeconfig.cache
+D:\Đồ án 2 (bán cocktail với mvc)\Solution1\API User\obj\Debug\net6.0\ref\API User.dll
